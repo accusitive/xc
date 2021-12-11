@@ -1,0 +1,25 @@
+From f4d8a64c77b66650e179f858ba1965d8700b14e9 Mon Sep 17 00:00:00 2001
+From: RS <rs@neb.best>
+Date: Sat, 11 Dec 2021 14:18:21 -0500
+Subject: [PATCH] make inner public
+
+---
+ src/execution_engine.rs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/execution_engine.rs b/src/execution_engine.rs
+index db09d9a4..ad6bd2f8 100644
+--- a/src/execution_engine.rs
++++ b/src/execution_engine.rs
+@@ -473,7 +473,7 @@ impl Deref for ExecEngineInner<'_> {
+ #[derive(Clone)]
+ pub struct JitFunction<'ctx, F> {
+     _execution_engine: ExecEngineInner<'ctx>,
+-    inner: F,
++    pub inner: F,
+ }
+ 
+ impl<F> Debug for JitFunction<'_, F> {
+-- 
+2.34.1
+

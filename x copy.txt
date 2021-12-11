@@ -1,7 +1,0 @@
-i32 main() {
-    print val()
-    return 0
-}
-i32 val() {
-    return 5;
-}
