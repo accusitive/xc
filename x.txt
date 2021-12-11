@@ -1,0 +1,7 @@
+i64 oo() {
+    return 410
+}
+i64 main() {
+    return oo()
+}
+
