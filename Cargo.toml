@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 peekmore = "1.0.0"
-inkwell = { path = "./inkwell" , features = ["llvm12-0"]}
+inkwell = { git = "./inkwell" , features = ["llvm12-0"]}
